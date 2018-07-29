@@ -107,7 +107,6 @@ export default {
       })
     },
     deleteCurrency: async function (id) {
-      console.info(id)
       await axios.delete('http://localhost:20000/' + id)
       await this.refresh()
       this.$message({
