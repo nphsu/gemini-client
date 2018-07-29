@@ -7,9 +7,14 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/hello', // 変更
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/',
+      name: 'Currency',
+      component: () => import('@/pages/PageCurrency')
     }
   ]
 })

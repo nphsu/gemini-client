@@ -1,8 +1,15 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <el-container
+    id="app"
+    class="vertical-fit">
+    <el-container
+      :span="24">
+      <el-header></el-header>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+    </el-container>
+  </el-container>
 </template>
 
 <script>

@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <el-date-picker type="datetime"></el-date-picker>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
